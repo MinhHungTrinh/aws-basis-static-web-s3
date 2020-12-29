@@ -17,4 +17,17 @@
 ```
 
 * Enable Static Website in S3 (property)
+(Optional) Redirect config rule:
+```
+[
+    {
+        "Condition": {
+            "KeyPrefixEquals": "redirect.html"
+        },
+        "Redirect": {
+            "ReplaceKeyPrefixWith": "error.html"
+        }
+    }
+]
+```
 * Create Distribution (Cloudfront), point to S3
