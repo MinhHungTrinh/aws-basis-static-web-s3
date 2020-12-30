@@ -22,10 +22,10 @@
 [
     {
         "Condition": {
-            "KeyPrefixEquals": "redirect.html"
+            "KeyPrefixEquals": "redirect"
         },
         "Redirect": {
-            "ReplaceKeyPrefixWith": "error.html"
+            "ReplaceKeyPrefixWith": "sample.html"
         }
     }
 ]
